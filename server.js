@@ -17,7 +17,7 @@ const db_password = "SSjena@25";
 app.use("*", cors());
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, '/client/public')));
+app.use(express.static(path.join(__dirname, '/client/build')));
 
 
 app.get('/', (req,res) => {
